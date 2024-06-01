@@ -10,7 +10,7 @@ const getSingleStudent = catchAsync(async (req, res) => {
     sendResponse(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Student is retrieved successfully',
+      message: 'Student is retrieved successfully!',
       data: result,
     });
 });
@@ -21,7 +21,7 @@ const getAllStudents = catchAsync(async (req, res) => {
     sendResponse(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Student are retrieved successfully',
+      message: 'Students are retrieved successfully!',
       data: result,
     });
 });
@@ -33,7 +33,7 @@ const deleteStudent = catchAsync(async (req, res) => {
     sendResponse(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Student is deleted successfully',
+      message: 'Student is deleted successfully!',
       data: result,
     });
 });
@@ -46,7 +46,7 @@ const updateStudent = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Student is updated successfully',
+    message: 'Student is updated successfully!',
     data: result,
   });
 });
