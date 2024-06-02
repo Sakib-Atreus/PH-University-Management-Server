@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import mongoose from 'mongoose';
 import config from '../../config';
 import { AcademicSemester } from '../academicSemester/academicSemester.model';
@@ -55,10 +56,10 @@ const createStudentIntoDB = async (password: string, payLoad: TStudent) => {
 
     return newStudent;
 
-  }catch(err){
+  }catch(err: any){
     await session.abortTransaction();
     await session.endSession();
-    throw new Error('Failed to create student!')
+    throw new Error(err)
   }
 
   
