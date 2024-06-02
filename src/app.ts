@@ -16,7 +16,8 @@ app.use(cors());
 // application routes
 app.use('/api/v1', router);
 
-const testRoute = (req: Request, res: Response) => {
+const testRoute = async(req: Request, res: Response) => {
+  // Promise.reject();
   res.send("Hello Developer!");
 };
 
