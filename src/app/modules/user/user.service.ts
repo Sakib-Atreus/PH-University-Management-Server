@@ -148,7 +148,7 @@ const createAdminIntoDB = async (password: string, payload: TFaculty) => {
 
     //create a admin
     if (!newUser.length) {
-      throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create admin!');
+      throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create admin !');
     }
     // set id , _id as user
     payload.id = newUser[0].id;
