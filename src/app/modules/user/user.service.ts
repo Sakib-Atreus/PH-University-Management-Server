@@ -112,7 +112,7 @@ const createFacultyIntoDB = async (password: string, payload: TFaculty) => {
     const newFaculty = await Faculty.create([payload], { session });
 
     if (!newFaculty.length) {
-      throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create faculty!');
+      throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create faculty !');
     }
 
     await session.commitTransaction();
