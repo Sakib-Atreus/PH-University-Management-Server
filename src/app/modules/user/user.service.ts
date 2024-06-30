@@ -86,7 +86,7 @@ const createFacultyIntoDB = async (password: string, payload: TFaculty) => {
   );
 
   if (!academicDepartment) {
-    throw new AppError(400, 'Academic department not found!');
+    throw new AppError(400, 'Academic department not found !');
   }
 
   const session = await mongoose.startSession();
