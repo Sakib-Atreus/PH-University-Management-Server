@@ -43,7 +43,7 @@ const createStudentIntoDB = async (password: string, payLoad: TStudent) => {
   //create a student
   // if (Object.keys(newUser).length) {
   if (!newUser.length) {
-    throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create user!');
+    throw new AppError(httpStatus.BAD_REQUEST, 'Failed to create user !');
   }
     // set id , _id as user
     payLoad.id = newUser[0].id;
